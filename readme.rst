@@ -1,5 +1,5 @@
 ###################
-REQUIREMENTS
+Requirements
 ###################
 
 -  php 5.4
@@ -15,7 +15,7 @@ Config
 -  Run db/create_tables.sql
 
 ###################
-RUN Dev
+Run dev
 ###################
 
 -  Config application/config/database.php file
