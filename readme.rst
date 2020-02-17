@@ -5,10 +5,20 @@ REQUIREMENTS
 -  php 5.4
 -  Postgres 9.2
 -  Apache
+-  npm
 
 ###################
-RUN
+Config
 ###################
 
 -  Config application/config/database.php file
 -  Run db/create_tables.sql
+
+###################
+RUN Dev
+###################
+
+-  Config application/config/database.php file
+-  Run db/create_tables.sql
+-  npm install
+-  npx babel --watch src --out-dir . --presets react-app/prod
