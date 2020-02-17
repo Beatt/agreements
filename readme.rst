@@ -2,5 +2,5 @@
 RUN
 ###################
 
--  `Config database.php file`_
--  `Run db/create_tables.sql`_
+-  Config database.php file
+-  Run db/create_tables.sql
