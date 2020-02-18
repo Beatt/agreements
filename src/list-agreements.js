@@ -13,6 +13,7 @@ const LikeButton = ({ agreements }) => {
           <th>Institución</th>
           <th>Vigencia</th>
           <th>Delegación</th>
+          <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
@@ -28,6 +29,9 @@ const LikeButton = ({ agreements }) => {
               <td>{agreement.institucion_educativa}</td>
               <td>{agreement.vigencia}</td>
               <td>{agreement.delegacion}</td>
+              <td>
+                <a href={`/agreement/edit/${agreement.id}`}>Editar</a>
+              </td>
             </tr>
           ))
         }

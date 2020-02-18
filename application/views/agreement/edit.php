@@ -40,10 +40,10 @@
             <?php } ?>
             <div class="pure-g">
                 <div class="pure-u-1">
-                    <h1>Creación de convenio</h1>
+                    <h1>Edición de convenio</h1>
                 </div>
                 <div class="pure-u-1">
-                    <form action="/agreement/create"
+                    <form action="/agreement/edit/<?php print $agreement['id'] ?>"
                           method="post"
                           class="pure-form pure-form-aligned">
                         <fieldset>
@@ -53,7 +53,7 @@
                                        name="agreement[nombre]"
                                        type="text"
                                        required
-                                >
+                                       value="<?php print $agreement['nombre'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -61,7 +61,8 @@
                                 <input id="agreement_sector"
                                        name="agreement[sector]"
                                        type="text"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['sector'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -69,7 +70,8 @@
                                 <input id="agreement_tipo_convenio"
                                        name="agreement[tipo_convenio]"
                                        type="text"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['tipo_convenio'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -77,7 +79,8 @@
                                 <input id="agreement_grado_academico"
                                        name="agreement[grado_academico]"
                                        type="text"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['grado_academico'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -85,7 +88,8 @@
                                 <input id="agreement_ciclo_academico"
                                        name="agreement[ciclo_academico]"
                                        type="text"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['ciclo_academico'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -93,7 +97,8 @@
                                 <input id="agreement_carrera"
                                        name="agreement[carrera]"
                                        type="text"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['carrera'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -101,7 +106,8 @@
                                 <input id="agreement_institucion_educativa"
                                        name="agreement[institucion_educativa]"
                                        type="text"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['institucion_educativa'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -109,7 +115,8 @@
                                 <input id="agreement_vigencia"
                                        name="agreement[vigencia]"
                                        type="date"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['vigencia'] ?>">
                             </div>
 
                             <div class="pure-control-group">
@@ -117,7 +124,8 @@
                                 <input id="agreement_delegacion"
                                        name="agreement[delegacion]"
                                        type="text"
-                                       required>
+                                       required
+                                       value="<?php print $agreement['delegacion'] ?>">
                             </div>
                             <div class="pure-controls">
                                 <a href="/" class="pure-button pure-button-default">Regresar</a>

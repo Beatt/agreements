@@ -56,6 +56,11 @@ var LikeButton = function LikeButton(_ref) {
           "th",
           null,
           "Delegaci\xF3n"
+        ),
+        React.createElement(
+          "th",
+          null,
+          "Acciones"
         )
       )
     ),
@@ -110,6 +115,15 @@ var LikeButton = function LikeButton(_ref) {
             "td",
             null,
             agreement.delegacion
+          ),
+          React.createElement(
+            "td",
+            null,
+            React.createElement(
+              "a",
+              { href: "/agreement/edit/" + agreement.id },
+              "Editar"
+            )
           )
         );
       })

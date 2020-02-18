@@ -53,3 +53,4 @@ $route['default_controller'] = 'agreement';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['agreements/create'] = 'agreement/create';
+$route['agreement/edit/(:any)'] = 'agreement/edit/$1';
